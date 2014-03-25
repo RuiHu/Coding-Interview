@@ -29,4 +29,14 @@ bool checkAnagram(char *str1, char *str2){
     return true;
 }
     
+int main(){
+    char str1[] = "geek"
+    char str2[] = "hack"
+    if ( checkAnagram(str1, str2) ){
+        printf("The two strings are anagrams");
+    } else {
+        printf("The two strings are not anagrams");
+    }
     
+    return 0;
+}
