@@ -1,0 +1,8 @@
+// The method here assumes that the characters are stored using 8 bit.
+// So there are only 256 possible different kinds of characters.
+
+# include <stdio.h>
+# define NO_OF_CHAR 256
+
+bool checkAnagram(char *str1, char *str2){
+    
