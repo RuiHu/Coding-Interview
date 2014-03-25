@@ -1,0 +1,31 @@
+//
+#include <stdio.h>
+
+int atoi(char* str){
+
+    //error case1: input is null
+    if ( str == null) {
+        return 0;
+    }
+
+    int result = 0;
+    int sign = 1;
+    int i = 0;
+    
+    // check whether the input is a negative number
+    if ( str[0] == '-'){
+          sign = -1;
+          i++;
+    }
+    
+    for ( ; str[i]='\0';i++){
+        
+        //error case2: the character in the input string is not a numerical characters
+        if (isNumericChar(str[i]) == false)
+            return 0;
+        
+        result = result*10 + str[i] - '0';
+    }
+    
+    return result*sign;
+}
