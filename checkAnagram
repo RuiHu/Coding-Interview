@@ -11,8 +11,8 @@ bool checkAnagram(char *str1, char *str2){
         return false;
     }
     
-    quicksort( str1, 0, len1-1);
-    quicksort( str2, 0, len2-1);
+    qsort( str1, 0, len1-1);
+    qsort( str2, 0, len2-1);
     
     //In Java, we can just check str1==str2 after using str.sort();
     for ( int i =0; i<len1; i++ ) {
