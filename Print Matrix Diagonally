@@ -1,1 +1,19 @@
 //Given a 2D matrix, print all elements of the given matrix in diagonal order.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define ROW 5
+#define COL 5
+
+int min(int a, int b) { 
+    return (a < b)? a: b; 
+}
+
+int min(int a, int b, int c){ 
+    return min(min(a, b), c);
+}
+
+int max(int a, int b){ 
+    return (a > b)? a: b; 
+}
