@@ -17,3 +17,17 @@ int min(int a, int b, int c){
 int max(int a, int b){ 
     return (a > b)? a: b; 
 }
+
+void printDiagonal( int matrix[][COL] ){
+    
+    for ( int line =1; line < ROW + COL; line++ ) {
+        int start_col = max(0, line-ROW);
+        
+        int count = min( line, (COL - start_col), ROW );
+        
+        for (int j = 0; j< count; j++){
+            prinf("5%d", matrix[ min(ROW, line) - j -1 ) ][start_col +j])
+        }
+        printf("\n");
+    }
+}
