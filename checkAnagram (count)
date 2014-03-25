@@ -21,6 +21,12 @@ bool checkAnagram(char *str1, char *str2){
     if (str1[i] || str[i] )
         return false;
     
+    for ( i =0; i<NO_OF_CHAR; i++){
+        if (count1[i] != count2[i] )
+            return false;
+    }
     
+    return true;
+}
     
     
