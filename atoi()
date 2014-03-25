@@ -29,3 +29,10 @@ int atoi(char* str){
     
     return result*sign;
 }
+
+int main(){
+    char str[] = "-134"
+    int result = atoi(str);
+    printf("%d", result);
+    return 0;
+}
