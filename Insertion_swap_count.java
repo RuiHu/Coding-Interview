@@ -1,9 +1,11 @@
 import java.util.*;
 import java.util.Scanner;
 
+//NOTICE: We can use inversion counting to perform a better solution. Will update that method soon.
+
 public class inversion{
 	
-	static long insertion_sort_count(int[] arr){
+	static long Insertion_swap_count(int[] arr){
 		
 		if (arr==null || arr.length<=1) return 0;
 		
