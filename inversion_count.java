@@ -49,6 +49,6 @@ public class inversion{
 		}
 		
 		//close the scanner. have checked on stackoverflow
-		//if(in!=null) in.close();
+		if(in!=null) in.close();
 	}
 }
