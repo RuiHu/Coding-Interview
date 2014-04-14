@@ -6,7 +6,7 @@ public class QuickSort {
       
     public static void quickSort(int[] array, int low, int high) {  
         if(low < high) {  
-            int pivotLoc = partition(array, low, high); //将array一分为二，pivotLoc是枢轴位置  
+            int pivotLoc = partition(array, low, high); 
             quickSort(array, low, pivotLoc - 1); //对低子表递归排序  
             quickSort(array, pivotLoc + 1, high); //对高子表递归排序  
         }  
