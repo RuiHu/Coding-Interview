@@ -18,6 +18,8 @@ int atoi(char* str){
           i++;
     }
     
+    
+    //Since i has been declared before, there is no "int i=0" in the "for ()" clause.
     for ( ; str[i]='\0';i++){
         
         //error case2: the character in the input string is not a numerical characters
