@@ -7,6 +7,7 @@ public class inversion{
 	
 	static long Insertion_swap_count(int[] arr){
 		
+		
 		if (arr==null || arr.length<=1) return 0;
 		
 		int len = arr.length;
