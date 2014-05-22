@@ -1,6 +1,8 @@
 import java.util.*;
 import java.util.Scanner;
 
+//insert it
+
 //NOTICE: We can use inversion counting to perform a better solution. Will update that method soon.
 
 public class inversion{
